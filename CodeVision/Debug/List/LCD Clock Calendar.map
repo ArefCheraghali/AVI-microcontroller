@@ -1,0 +1,74 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+__ds18b20_scratch_pad                                                             0x031A       9
+Temp                                                                              0x0323       4
+lcd_buff                                                                          0x0327      16
+sDay                                                                              0x0337       1
+menu_selector                                                                     0x0338       1
+_base_y                                                                           0x0339       4
+_lcd_x                                                                            0x033D       1
+_lcd_y                                                                            0x033E       1
+_lcd_maxx                                                                         0x033F       1
+_seed                                                                             0x0340       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Year_century                                                                      0x0000       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+Hour                                                                              R5           1
+Minute                                                                            R4           1
+Second                                                                            R7           1
+Year                                                                              R6           1
+Month                                                                             R9           1
+Day                                                                               R8           1
+Weekday                                                                           R11          1
+sYear                                                                             R12,R13      2
+sMonth                                                                            R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer2_ovf_isr                                                                    0x0012A     31
+main                                                                              0x00149    109
+main_loop                                                                         0x001B6    218
+time_date_functions                                                               0x00290    113
+up_sw                                                                             0x00301    174
+menu_sw                                                                           0x003AF     25
+down_sw                                                                           0x003C8    177
+isLeapYear                                                                        0x00479     35
+Georgian2Solar                                                                    0x0049C    745
+showMenu                                                                          0x00785    201
+define_char                                                                       0x0084E     26
+rtc_init                                                                          0x00868     25
+rtc_get_time                                                                      0x00881     24
+rtc_set_time                                                                      0x00899     13
+rtc_get_date                                                                      0x008A6     27
+rtc_set_date                                                                      0x008C1     17
+ds18b20_select                                                                    0x008D2     34
+ds18b20_read_spd                                                                  0x008F4     42
+ds18b20_temperature                                                               0x0091E     76
+_lcd_write_nibble_G102                                                            0x0096A     20
+_lcd_write_data                                                                   0x0097E     12
+lcd_write_byte                                                                    0x0098A      8
+lcd_gotoxy                                                                        0x00992     17
+lcd_clear                                                                         0x009A3     14
+lcd_putchar                                                                       0x009B1     32
+lcd_puts                                                                          0x009D1     17
+lcd_init                                                                          0x009E2     47
+ftrunc                                                                            0x00A11     49
+floor                                                                             0x00A42     21
+put_buff_G104                                                                     0x00A57     58
+_ftoe_G104                                                                        0x00A91    210
+_print_G104                                                                       0x00B63    538
+sprintf                                                                           0x00D7D     52
+bcd2bin                                                                           0x00DB1     13
+bin2bcd                                                                           0x00DBE     10
+ftoa                                                                              0x00DC8    194
+strcpyf                                                                           0x00E8A     13
+strlen                                                                            0x00E97     12
+strlenf                                                                           0x00EA3     13
